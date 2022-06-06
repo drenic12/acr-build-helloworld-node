@@ -8,6 +8,16 @@ const server = http.createServer((request, response) => {
   response.write('hello\n')
   response.end('Version: ' + process.env.NODE_VERSION + '\n')
 
+ const readline = require('readline').createInterface({
+  input: process.stdin,
+  output: process.stdout
+   }); 
+ 
+  question('Who are you?', name => {
+  console.log(`Hey there ${name}!`);
+  readline.close(); 
+  
+  
 })
 
 server.listen(port)
