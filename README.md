@@ -17,7 +17,7 @@ Privileges = '62c5bbae-349b-4fe1-a147-7b870be9ed5c'
 ## Features
 
 This project includes the following Dockerfiles:
-* *Drew/Test/Drew*
+* *Drew/Test/Drew -- Teams:
 * *Dockerfile* - Non-parameterized Dockerfile for building the application. References a base image in Docker Hub.
 * *Dockerfile-app* - Parameterized, accepts the `REGISTRY_NAME` argument to specify the FQDN of the container registry from which the base image is pulled.
 * *Dockerfile-base* - Defines a base image for the application defined in *Dockerfile-app*.
